@@ -1,0 +1,241 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --hero-bg: #1F2937;
+    --hero-main-text-clr: #f9faf8;
+    --hero-sec-text-clr: #e5e7eb;
+    --cat-clr: #3882f6;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-container {
+    background-color: var(--hero-bg);
+    min-height: 81vh;
+    padding: 1em 10% 0 15%;
+}
+
+.hero-secondary {
+    padding-top: 13%;
+    display: flex;
+    align-items: center;
+}
+
+.left-container {
+    width: 27em;
+}
+
+#hero-img {
+    margin-left: auto;
+    height: 14em;
+    background-color: #6D747D;
+    color: white;
+    width: 33em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--hero-main-text-clr);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    line-height: 25px;
+}
+
+header p {
+    font-size: 24px;
+    color: var(--hero-main-text-clr);
+    font-weight: 600;
+}
+
+nav a, .hero-secondary-text {
+    font-size: 18px;
+    color: var(--hero-sec-text-clr);
+    text-decoration: none;
+}
+
+nav a {
+    padding: 10px;
+}
+
+.hero-secondary-text {
+    padding: 10px 0;
+}
+
+.btn {
+    background-color: var(--cat-clr);
+    border: none;
+    padding: 0.4em 1.6em;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 7em;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-item img {
+    width: 180px; 
+    height: 180px;
+    margin-right: 10px;
+    border: 3px solid var(--cat-clr);
+    border-radius: 20px;
+    margin-top: 3em;
+}
+
+.info-item p {
+    width: 80%;
+    padding-top: 10px;
+    font-size: 17px;
+    color: #4B5563;
+}
+
+div h3 {
+    padding-top: 1.5em;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--hero-bg);
+}
+
+.items-container {
+    display: flex;
+    max-width: 60vw;
+}
+
+.quote-container {
+    display: flex;
+    padding: 7em;
+    background-color: var(--hero-sec-text-clr)
+}
+
+blockquote {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: inherit;
+    color: var(--hero-bg);
+}
+
+.author {
+    align-self: flex-end;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.cta-container {
+    display: flex;
+    padding: 7em;
+}
+
+.cta {
+    background-color: var(--cat-clr);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 9em;
+    border-radius: 10px;
+}
+
+.cta h6 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cta p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn-cta {
+    border: 2px solid white;
+    margin: 3em;
+}
+
+.footer {
+    display: flex;
+    background-color: var(--hero-bg);
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: #fff;
+}
